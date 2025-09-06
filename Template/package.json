@@ -1,0 +1,14 @@
+{
+  "name": "real-estate-website",
+  "version": "1.0.0",
+  "description": "A modern real estate website",
+  "scripts": {
+    "start": "tsc --watch & live-server src/",
+    "build": "tsc",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "live-server": "^1.2.2"
+  }
+}
