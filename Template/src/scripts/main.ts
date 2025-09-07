@@ -42,18 +42,13 @@ const handleSmoothScroll = (e: Event) => {
 
 // Function to handle navigation menu for mobile devices
 const handleMobileNav = () => {
+    const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    const hamburger = document.createElement('button');
-    hamburger.classList.add('hamburger');
-    hamburger.innerHTML = '☰';
-    
-    document.querySelector('.main-nav')?.insertBefore(
-        hamburger, 
-        document.querySelector('.nav-links')
-    );
+    const contactButtons = document.querySelector('.contact-buttons');
 
-    hamburger.addEventListener('click', () => {
+    hamburger?.addEventListener('click', () => {
         navLinks?.classList.toggle('show');
+        contactButtons?.classList.toggle('show');
     });
 };
 
